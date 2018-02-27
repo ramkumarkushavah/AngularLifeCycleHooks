@@ -1,0 +1,10 @@
+
+
+<div id = "app">
+Name (keyup.enter)  :<input (keyup.enter)="onKey(item1.value);" #item1 type = "text" id = "name"/><br/><br/>
+Name (keyup)        :<input (keyup)="onKey(item2.value);" #item2 type = "text" id = "name"/><br/><br/>
+Name (keyup event)  :<input (keyup)="onKey($event);" #item3 type = "text" id = "name"/><br/><br/>
+</div>
+
+
+<app-parent [appMsg] = "appName"></app-parent>
